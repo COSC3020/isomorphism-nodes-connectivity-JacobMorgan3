@@ -12,6 +12,8 @@ one-to-one and onto function (bijection) $f: V_1 \rightarrow V_2$ such that $(u,
 \in E_1$ iff $(f(u),f(v)) \in E_2$.
 
 ## Proof
-To be isomorphic the mapping of one graphs nodes to the others nodes must be one-to-one and unto. So for A to be isomorphic to B it's mappings must be one-to-one and onto. To be one-to-one, A's nodes map to distinct nodes of B. And to be onto, A's nodes must have a map to every node in B. For a graph to be completely connected every node has an edge to every other node. <br/>
+To prove that an two graphs (A and B) that have the same number of nodes and are completely connected must be isomorphic, I will provide steps to form the mapping so they are always isomorphic. <br/>
 <br/>
-If two graphs have the same number of nodes and are completely connected, then using the informal definition of isomorphism, "two graphs are isomorphic if they have the same structure (ignoring vertex names)" we can clearly see that two graphs with the same number of nodes and are both completely connected have to be isomorphic. There structures have to be the same if they have equal number of nodes and are completely connected. 
+Step 1, One-To-One: Create mappings from A to B. To be one-to-one every node in A must map to a distinct node in B, meaning that no two nodes in A map to the same node in B. Since both graphs are completely connect it doesn't matter where you start, so start at any node in A and map it to any node in B that is not already mapped to. Then continue until every node in A has a map to a node in B. Since both graphs have the same number of nodes no node will not have a mapping.
+<br/>
+Step 2, Onto: Ensure that every node in B has a mapping to it. This is already done because both graphs have the same number of nodes and we created our mappings to be one-to-one. Every node in A maps to a distinct node in B and since both graphs have the same number of nodes this means that every node in B must already have a mapping to it. 
