@@ -16,4 +16,6 @@ To prove that an two graphs (A and B) that have the same number of nodes and are
 <br/>
 Step 1, One-To-One: Create mappings from A to B. To be one-to-one every node in A must map to a distinct node in B, meaning that no two nodes in A map to the same node in B. Since both graphs are completely connect it doesn't matter where you start, so start at any node in A and map it to any node in B that is not already mapped to. Then continue until every node in A has a map to a node in B. Since both graphs have the same number of nodes no node will not have a mapping.
 <br/>
-Step 2, Onto: Ensure that every node in B has a mapping to it. This is already done because both graphs have the same number of nodes and we created our mappings to be one-to-one. Every node in A maps to a distinct node in B and since both graphs have the same number of nodes this means that every node in B must already have a mapping to it. 
+Step 2, Onto: Ensure that every node in B has a mapping to it. This is already done because both graphs have the same number of nodes and we created our mappings to be one-to-one. Every node in A maps to a distinct node in B and since both graphs have the same number of nodes this means that every node in B must already have a mapping to it. <br/>
+<br/>
+Step 3, Ensure that if an edge between two nodes exists in A then after the mapping that edge must exists in B to be isomorphic. Since both graph A and B are completely connected, any edge between 2 nodes in A will also exist in B. 
